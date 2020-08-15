@@ -13,8 +13,8 @@ if (process.env.NODE_ENV !== 'production') {
   mailchimplist = process.env.MAILCHIMP_LIST;
   mailchimpapi = process.env.MAILCHIMP_API;
 } else {
-  mailchimplist = process.env.HEROKU_MAILCHIMP_LIST;
-  mailchimpapi = process.env.HEROKU_MAILCHIMP_API;
+  mailchimplist = process.env.MAILCHIMP_LIST;
+  mailchimpapi = process.env.MAILCHIMP_API;
 }
 
 app.use(express.static(__dirname + '/public'));
